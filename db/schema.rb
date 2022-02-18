@@ -15,12 +15,6 @@ ActiveRecord::Schema.define(version: 2022_02_17_033535) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "book_marks", force: :cascade do |t|
-    t.string "comment"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "bookmarks", force: :cascade do |t|
     t.string "comment"
     t.bigint "movie_id", null: false
