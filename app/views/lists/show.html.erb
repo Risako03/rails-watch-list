@@ -2,7 +2,6 @@
     <h1><%= @list.name %></h1>
   </div>
     <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
-    <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
 </div>
 <div class="container mb-5">
   <div class="d-flex justify-content-between my-4">
